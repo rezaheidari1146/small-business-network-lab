@@ -98,12 +98,11 @@ small-business-network-lab/
     ├── services.png
     └── acl.png
 ```
-
 ## Screenshots
 
 ### Network Topology
 
-![Topology](screenshots/topology.png)
+![Network Topology](screenshots/topology.png)
 
 ### VLAN Configuration
 
@@ -113,17 +112,18 @@ small-business-network-lab/
 
 ![IP Addressing](screenshots/ip-addressing.png)
 
-### Connectivity Testing
+### Connectivity Test
 
-![Connectivity Testing](screenshots/connectivity-test.png)
+![Connectivity Test](screenshots/connectivity-test.png)
 
-### Services
+### Network Services
 
 ![Network Services](screenshots/services.png)
 
 ### ACL Configuration
 
 ![ACL Configuration](screenshots/acl.png)
+
 
 ## What I Learned
 
