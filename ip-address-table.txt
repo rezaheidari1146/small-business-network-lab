@@ -1,0 +1,14 @@
+IP Address Table
+
+Device         Interface       IP Address        Subnet Mask
+--------------------------------------------------------------
+R1             G0/0.10         [IP]              [Mask]
+R1             G0/0.20         [IP]              [Mask]
+R1             G0/0.30         [IP]              [Mask]
+
+SRV1           NIC             [IP]              [Mask]
+
+PC-ACC-01      NIC             DHCP              -
+PC-ACC-02      NIC             DHCP              -
+PC-IT-01       NIC             DHCP              -
+PC-USR-01      NIC             DHCP              -

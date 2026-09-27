@@ -1,0 +1,7 @@
+VLAN Table
+
+VLAN ID     Name             Purpose
+--------------------------------------------
+10          ACCOUNTING       Accounting users
+20          IT               IT users
+30          USERS            General users

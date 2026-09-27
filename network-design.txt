@@ -1,0 +1,29 @@
+Network Design
+
+Project:
+Small Business Network Lab
+
+Objective:
+To design and configure a small business network using Cisco Packet Tracer.
+
+Main Technologies:
+- VLAN
+- Trunking
+- Inter-VLAN Routing
+- DHCP
+- DNS
+- HTTP
+- ACL
+- IPv4
+
+Network Devices:
+- 1 Router
+- 2 Switches
+- End devices
+- 1 Server
+
+Security:
+ACL rules are used to control traffic between selected network segments.
+
+Testing:
+Connectivity was tested using ping, HTTP, DNS and Cisco IOS verification commands.
