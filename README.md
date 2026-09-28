@@ -102,27 +102,31 @@ small-business-network-lab/
 
 ### Network Topology
 
-![Network Topology](screenshots/topology.png)
+![Network Topology](screenshots/TOPOLOGY.PNG)
 
 ### VLAN Configuration
 
-![VLAN Configuration](screenshots/vlan-configuration.png)
+![VLAN Configuration](screenshots/VLAN%20configuration.PNG)
 
 ### IP Addressing
 
-![IP Addressing](screenshots/ip-addressing.png)
-
-### Connectivity Test
-
-![Connectivity Test](screenshots/connectivity-test.png)
+![IP Addressing](screenshots/ip-addressing.PNG)
 
 ### Network Services
 
-![Network Services](screenshots/services.png)
+![Network Services](screenshots/show%20ip%20dhcp%20binding.PNG)
+
+### Trunk Configuration
+
+![Trunk Configuration](screenshots/show%20interfaces%20trunk.PNG)
+
+### Routing Verification
+
+![Routing Verification](screenshots/show%20ip%20route.PNG)
 
 ### ACL Configuration
 
-![ACL Configuration](screenshots/acl.png)
+![ACL Configuration](screenshots/ACL.PNG)
 
 
 ## What I Learned
