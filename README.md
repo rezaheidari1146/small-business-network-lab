@@ -4,153 +4,125 @@
 
 This project demonstrates the design and configuration of a small business network using Cisco Packet Tracer.
 
-The lab was built as a practical networking project to apply fundamental concepts such as VLAN segmentation, trunking, inter-VLAN routing, DHCP, DNS, HTTP services, and basic traffic filtering with ACLs.
+The lab was built as a practical networking project to apply fundamental concepts such as VLAN segmentation, trunking, inter-VLAN routing, DHCP, DNS, HTTP services, and basic traffic control using ACLs.
+
+The project also includes network documentation and verification screenshots.
+
+---
 
 ## Objectives
 
-* Design a small business network topology
-* Configure VLANs for network segmentation
-* Configure trunk links
-* Implement inter-VLAN routing
-* Configure DHCP for end devices
-* Configure DNS services
-* Configure an HTTP server
-* Implement basic traffic control using ACLs
-* Verify network connectivity and configuration using Cisco IOS commands
+The main objectives of this project were:
+
+- Design a small business network topology
+- Configure VLAN segmentation
+- Configure 802.1Q trunking
+- Implement inter-VLAN routing
+- Configure DHCP services
+- Configure DNS services
+- Configure HTTP services
+- Implement basic traffic control using ACLs
+- Verify network connectivity and configurations
+- Practice Cisco IOS verification commands
+- Document the network configuration
+
+---
 
 ## Technologies & Concepts
 
-* Cisco Packet Tracer
-* IPv4
-* VLAN
-* 802.1Q Trunking
-* Inter-VLAN Routing
-* DHCP
-* DNS
-* HTTP
-* Extended ACL
-* Cisco IOS CLI
+- Cisco Packet Tracer
+- Cisco IOS
+- VLANs
+- 802.1Q Trunking
+- Inter-VLAN Routing
+- DHCP
+- DNS
+- HTTP
+- ACLs
+- IPv4
+- TCP/IP
+- Network Troubleshooting
+
+---
 
 ## Network Topology
 
-![Network Topology](screenshots/topology.png)
+The network was designed to represent a small business environment with multiple network segments and end devices.
+
+The topology includes:
+
+- Cisco Router
+- Cisco Switches
+- PCs
+- Laptop
+- Server
+- Multiple VLANs
+- Trunk links
+- Inter-VLAN routing
+
+---
 
 ## VLAN Structure
 
-| VLAN | Name       | Purpose          |
-| ---- | ---------- | ---------------- |
-| 10   | ACCOUNTING | Accounting users |
-| 20   | IT         | IT users         |
-| 30   | USERS      | General users    |
+The network uses VLANs to logically separate devices and network traffic.
+
+VLAN configuration and addressing information are documented in the project files.
+
+See:
+
+- [VLAN Table](documentation/vlan-table.txt)
+- [IP Address Table](documentation/ip-address-table.txt)
+
+---
+
+## Inter-VLAN Routing
+
+Inter-VLAN communication is implemented using router-based inter-VLAN routing.
+
+The router provides Layer 3 connectivity between the different VLANs.
+
+This allows devices in separate VLANs to communicate while maintaining logical network segmentation.
+
+---
 
 ## Network Services
 
+The project includes several basic network services:
+
 ### DHCP
 
-DHCP is used to automatically provide IP configuration to client devices.
+DHCP is used to automatically provide IP configuration information to network clients.
+
+The DHCP configuration was verified using Cisco IOS commands.
 
 ### DNS
 
-A DNS service is configured to resolve hostnames to IP addresses within the lab environment.
+DNS was configured to provide name resolution within the lab environment.
 
 ### HTTP
 
-An HTTP server is configured to demonstrate application-layer connectivity between network clients and the server.
+An HTTP service was configured on the network server to demonstrate basic application-layer network services.
 
-## Security
+---
 
-Basic traffic filtering is implemented using Access Control Lists (ACLs).
+## Network Security
 
-The purpose of the ACL configuration is to control selected traffic between network segments while allowing required application traffic.
+Basic network traffic control was implemented using Access Control Lists (ACLs).
 
-## Verification & Testing
+The ACL configuration was tested to verify that traffic was handled according to the defined rules.
 
-The network configuration was verified using Cisco IOS commands and end-device testing, including:
+This project focuses on fundamental ACL concepts rather than advanced enterprise security.
 
-* `show vlan brief`
-* `show interfaces trunk`
-* `show ip interface brief`
-* `show ip route`
-* `show ip dhcp binding`
-* `show access-lists`
-* `ipconfig`
-* `ping`
-* DNS testing
-* HTTP testing
+---
 
-## Project Structure
+## Verification & Troubleshooting
+
+Several Cisco IOS verification commands were used during the project, including:
 
 ```text
-small-business-network-lab/
-│
-├── small-business-network-lab.pkt
-│
-├── documentation/
-│   ├── ip-address-table.txt
-│   ├── vlan-table.txt
-│   └── network-design.txt
-│
-└── screenshots/
-    ├── topology.png
-    ├── vlan-configuration.png
-    ├── ip-addressing.png
-    ├── connectivity-test.png
-    ├── services.png
-    └── acl.png
-```
-## Screenshots
-
-### Network Topology
-
-![Network Topology](screenshots/TOPOLOGY.PNG)
-
-### VLAN Configuration
-
-![VLAN Configuration](screenshots/VLAN%20configuration.PNG)
-
-### IP Addressing
-
-![IP Addressing](screenshots/ip-addressing.PNG)
-
-### Network Services
-
-![Network Services](screenshots/show%20ip%20dhcp%20binding.PNG)
-
-### Trunk Configuration
-
-![Trunk Configuration](screenshots/show%20interfaces%20trunk.PNG)
-
-### Routing Verification
-
-![Routing Verification](screenshots/show%20ip%20route.PNG)
-
-### ACL Configuration
-
-![ACL Configuration](screenshots/ACL.PNG)
-
-
-## What I Learned
-
-Through this project, I practiced the configuration and troubleshooting of a small Cisco-based network.
-
-The project helped me understand how VLANs provide network segmentation, how trunk links transport multiple VLANs, and how inter-VLAN routing enables communication between different network segments.
-
-I also practiced using Cisco IOS verification commands and implementing basic traffic-control policies with ACLs.
-
-## Future Improvements
-
-Possible future improvements include:
-
-* Implementing additional security policies
-* Adding a firewall
-* Expanding the network topology
-* Adding a dedicated management VLAN
-* Introducing Linux-based services
-* Exploring network automation
-* Migrating similar network concepts to a cloud environment
-
-## Author
-
-**Alireza Heidari**
-
-IT & Networking Learner
+show vlan brief
+show interfaces trunk
+show ip interface brief
+show ip route
+show access-lists
+show ip dhcp binding
